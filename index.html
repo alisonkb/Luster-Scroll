@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript">
+     jQuery(function($){
+         $('#px-txt').load("./assets/Common_Pixel.ttf");
+     });
+  </script>
+
     <meta charset="utf-8">
     <!-- <script data-main="lib/budgie-runner" src="lib/require.js"></script> -->
 
@@ -13,7 +21,6 @@
     <script type="text/javascript" src='./lib/budgie-runner.js'>  </script>
 
     <link rel="stylesheet" href="./assets/stylesheets/application.css">
-    <link rel="stylesheet" href="./assets/stylesheets/budgie.scss">
     <link rel='icon' type='image/png' href='./assets/images/favicon.ico' />
     <title>Luster Runner</title>
   </head>
@@ -31,7 +38,7 @@
 
 
     </div>
-    <p>Press <b>SPACEBAR</b> to jump, </br>or <b>TAP</b> the screen on mobile</p>
+    <p id="px-txt">Press <b>SPACEBAR</b> to jump, </br>or <b>TAP</b> the screen on mobile</p>
     <p>Click to begin.</p>
 
   </body>
